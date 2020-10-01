@@ -24,7 +24,7 @@ body {
   background-color: rgb(253, 62, 62);
   margin: auto;
   border-radius: 50% 50% 15% 15%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .foxhead {
@@ -39,6 +39,24 @@ body {
   border-radius: 50%;
   border-bottom: 13px solid rgb(195, 195, 195);
   animation: nudge 3s linear infinite alternate;
+  z-index: 2;
+}
+
+.foxhead::before {
+  content: "";
+  position: relative;
+
+  height: 172px;
+  width: 250px;
+  margin: auto;
+  left: -28px;
+  right: 0;
+  top: -97px;
+  background-color: rgb(253, 62, 62);
+  border-radius: 50%;
+  border-bottom: 13px solid rgb(195, 195, 195);
+  animation: nudge 3s linear infinite alternate;
+  z-index: 2;
 }
 
 .fox-ear-left {
@@ -50,7 +68,7 @@ body {
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 100px solid black;
+  border-bottom: 100px solid rgb(253, 62, 62);
   z-index: -1;
 }
 
@@ -58,39 +76,59 @@ body {
   position: relative;
   transform: rotate(40deg);
   right: -170px;
-  bottom: 237px;
+  bottom: 210px;
   width: 0;
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 100px solid black;
+  border-bottom: 100px solid rgb(253, 62, 62);
   z-index: -1;
 }
 
 .fox-ear-left-inner {
   position: relative;
   transform: rotate(-40deg);
-  left: -30px;
+  left: -22px;
   bottom: 128px;
   width: 0;
   height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-bottom: 100px solid pink;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid pink;
   z-index: -1;
+}
+
+.fox-ear-left-inner-ear {
+  position: relative;
+  height: 50px;
+  width: 110px;
+  right: 56px;
+  bottom: -63px;
+  background-color: rgb(253, 62, 62);
+  border-radius: 50%;
 }
 
 .fox-ear-right-inner {
   position: relative;
   transform: rotate(40deg);
-  right: -159px;
-  bottom: 325px;
+  right: -193px;
+  bottom: 299px;
   width: 0;
   height: 0;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-bottom: 100px solid pink;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid pink;
   z-index: -1;
+}
+
+.fox-ear-right-inner-ear {
+  position: relative;
+  height: 50px;
+  width: 110px;
+  right: 56px;
+  bottom: -63px;
+  background-color: rgb(253, 62, 62);
+  border-radius: 50%;
 }
 
 .foxface {
@@ -100,7 +138,7 @@ body {
   position: relative;
   margin: auto;
   left: -64px;
-  bottom: 308px;
+  bottom: 248px;
   box-shadow: 134px 0 0 white, 64px 19px 0 white;
   border-radius: 50%;
   transform: rotate(0deg);
@@ -129,7 +167,7 @@ body {
   position: relative;
   margin: auto;
   left: 181px;
-  bottom: 40px;
+  bottom: 80px;
   border-radius: 0px 100% 100% 100%;
   transform: rotate(138deg);
 }
@@ -139,8 +177,8 @@ body {
   width: 20px;
   background-color: black;
   position: relative;
-  bottom: 393px;
-  left: 60px;
+  bottom: 65px;
+  left: 73px;
   border-radius: 50%;
   box-shadow: 110px 0 0 black;
 }
@@ -151,8 +189,8 @@ body {
   position: relative;
   background-color: black;
   border-radius: 25px 25px 80px 80px;
-  bottom: 381px;
-  left: 118px;
+  bottom: 55px;
+  left: 132px;
 }
 
 .fox-chest-fur {
@@ -229,6 +267,7 @@ body {
   left: 293px;
   border-radius: 50%;
   transform: rotate(45deg);
+  animation: tailswish 2s infinite alternate;
 }
 
 .fox-tail-tip {
@@ -245,5 +284,12 @@ body {
 @keyframes nudge {
   100% {
     transform: translate(0px, 10px);
+  }
+}
+
+@keyframes tailswish {
+  100% {
+    transform: rotate(40deg);
+    transform-origin: 50% 45%;
   }
 }
