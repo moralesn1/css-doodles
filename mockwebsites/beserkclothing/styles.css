@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.banner-delivery-promo {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #da1b00;
+  height: 30px;
+  width: 100%;
+}
+
+.banner-delivery-promo h5 {
+  margin-top: 7px;
+  margin-bottom: 0px;
+  color: white;
+  font-weight: 100;
+}
+
+img.banner-images {
+  width: 324px;
+  height: 124px;
+  display: inline-block;
+}
