@@ -1,6 +1,13 @@
 body {
   margin: 0;
   background-color: black;
+  color: white;
+}
+
+.wrapper {
+  margin-left: 5em;
+  margin-right: 5em;
+  align-items: center;
 }
 
 .banner-delivery-promo {
@@ -9,17 +16,96 @@ body {
   background-color: #da1b00;
   height: 30px;
   width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.banner-delivery-promo h5 {
+.banner-delivery-promo p {
   margin-top: 7px;
-  margin-bottom: 0px;
   color: white;
   font-weight: 100;
 }
 
-img.banner-images {
+.banner-delivery-promo .fas.fa-chevron-right,
+.fas.fa-chevron-left {
+  color: white;
+}
+
+img.nav-images {
   width: 324px;
   height: 124px;
   display: inline-block;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.nav-items-options {
+  width: 360px;
+}
+
+.account-bar-icon-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+i.fas {
+  display: flex;
+  justify-content: center;
+  color: #da1b00;
+  font-size: 1.5rem;
+}
+
+.account-bar-icons {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+
+form.search-bar {
+  margin-top: 1.5em;
+  display: inline-block;
+}
+
+.search-bar-input {
+  width: 324px;
+  height: 2em;
+}
+
+button.search-bar-input-button {
+  height: 2.5em;
+  width: 2.5em;
+  position: absolute;
+  right: 83px;
+  background-color: #da1b00;
+  border: none;
+}
+
+button.search-bar-input-button .fas.fa-chevron-right {
+  margin: auto;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.categories {
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  background: #302f30;
+  padding: 1em 0em 1em 0em;
+  font-size: 1em;
+}
+
+.category-items {
+  display: inline-block;
+}
+
+li.category-items i.fa-chevron-down {
+  color: white;
+  font-size: 0.8em;
 }
