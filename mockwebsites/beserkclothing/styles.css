@@ -2,38 +2,47 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .wrapper {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   align-items: center;
+}
+
+.banner-container {
+  text-align: center;
+  background-color: #ff0000;
 }
 
 .banner-delivery-promo {
   display: flex;
   justify-content: space-evenly;
-  background-color: #da1b00;
-  height: 30px;
-  width: 100%;
+  background-color: #ff0000;
+  height: 2rem;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
 
 .banner-delivery-promo p {
-  margin-top: 7px;
   color: white;
   font-weight: 100;
+  font-size: 15px;
+  margin: auto;
 }
 
 .banner-delivery-promo .fas.fa-chevron-right,
 .fas.fa-chevron-left {
   color: white;
+  font-size: 0.8rem;
+  margin: auto;
 }
 
 img.nav-images {
-  width: 324px;
-  height: 124px;
+  width: 393px;
+  height: 130px;
   display: inline-block;
 }
 
@@ -55,7 +64,7 @@ img.nav-images {
 i.fas {
   display: flex;
   justify-content: center;
-  color: #da1b00;
+  color: #ff0000;
   font-size: 1.5rem;
 }
 
@@ -72,16 +81,21 @@ form.search-bar {
   display: inline-block;
 }
 
+.search-bar {
+  display: flex;
+}
+
 .search-bar-input {
   width: 324px;
-  height: 2em;
+  height: 2.5em;
+  border: none;
 }
 
 button.search-bar-input-button {
-  height: 2.5em;
+  height: 2.6em;
   width: 2.5em;
   position: absolute;
-  right: 83px;
+  right: 25px;
   background-color: #da1b00;
   border: none;
 }
@@ -99,13 +113,26 @@ button.search-bar-input-button .fas.fa-chevron-right {
   background: #302f30;
   padding: 1em 0em 1em 0em;
   font-size: 1em;
+  margin-bottom: 0.8em;
 }
 
 .category-items {
   display: inline-block;
+  margin: auto;
+  font-size: 14px;
 }
 
 li.category-items i.fa-chevron-down {
   color: white;
   font-size: 0.8em;
+}
+
+li.category-items i.fas {
+  display: inline-block;
+}
+
+/* Hero Image Section */
+
+img.promo-image {
+  width: 100%;
 }
