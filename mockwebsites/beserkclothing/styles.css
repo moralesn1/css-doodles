@@ -46,6 +46,11 @@ img.nav-images {
   display: inline-block;
 }
 
+img.nav-images-delivery {
+  width: 324px;
+  height: 128px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -59,6 +64,20 @@ img.nav-images {
 .account-bar-icon-icons {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+
+a.account-bar {
+  text-decoration: none;
+}
+
+.account-bar-icon-icons:hover {
+  color: #ff0000;
+}
+
+.account-bar-icon-icons:visited {
+  color: white;
 }
 
 i.fas {
@@ -71,7 +90,7 @@ i.fas {
 .account-bar-icons {
   display: flex;
   flex-direction: row;
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 1em;
   justify-content: space-around;
 }
@@ -89,6 +108,11 @@ form.search-bar {
   width: 324px;
   height: 2.5em;
   border: none;
+  padding-left: 7px;
+}
+
+input.search-bar-input:focus {
+  outline: none;
 }
 
 button.search-bar-input-button {
@@ -107,19 +131,36 @@ button.search-bar-input-button .fas.fa-chevron-right {
 }
 
 .categories {
-  display: inline-block;
   display: flex;
   justify-content: space-around;
   background: #302f30;
-  padding: 1em 0em 1em 0em;
+  height: 50px;
   font-size: 1em;
   margin-bottom: 0.8em;
 }
 
+a.category-items {
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
 .category-items {
   display: inline-block;
   margin: auto;
   font-size: 14px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.category-items li {
+  text-align: center;
+}
+
+.category-items:hover {
+  background-color: #ff0000;
 }
 
 li.category-items i.fa-chevron-down {
@@ -129,6 +170,8 @@ li.category-items i.fa-chevron-down {
 
 li.category-items i.fas {
   display: inline-block;
+  font-size: 0.8em;
+  color: white;
 }
 
 /* Hero Image Section */
